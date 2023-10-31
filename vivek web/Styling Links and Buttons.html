@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Selectors and More Design</title>
+  </head>
+  <style>
+    .container {
+      border: 3px solid red;
+      background-color: rgb(179, 242, 153);
+      width: 600px;
+      padding: 12px;
+      border-radius: 23px;
+      margin: 24px auto;
+    }
+    .btn {
+     
+      border: 2px;
+      border-radius: 4px;
+      padding: 4px;
+      cursor: pointer;
+      font-weight:bold ;
+      background-color: rgb(43, 226, 89);
+    }
+    a {
+      text-decoration: none; /* for removing underline  */
+    }
+    a:hover {
+      color: rgb(23, 13, 226);
+      background-color: rgb(207, 120, 14);
+    }
+    a:visited{
+      background-color: red;
+    }
+    a:active{
+      background-color: blue;
+    }
+     .btn:hover {
+      background-color: rgb(9, 239, 32);
+      color: red;
+      border: 3px solid black;
+     }  
+  </style>
+  <body>
+    <div class="container" id="cont1">
+      <h3>This is My Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        libero porro ex reiciendis maiores, voluptatibus sint consequatur
+        voluptate, tempora quo explicabo. Ducimus magnam nemo modi, accusantium
+        officia esse consequuntur amet ex blanditiis.
+      </p>
+      <a href="yahoo" class="btn">Read more</a>
+      <button class="btn">contact us</button>
+    </div>
+  </body>
+</html>

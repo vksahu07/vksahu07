@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable & Custom properties</title>
+    <style>
+
+      :root{
+            --primary-color: blue;
+            --danger-color:red;
+            --maxw: 733px;
+      }
+      .container {
+       max-width:var(--maxw);
+       margin: auto; /* widht km hua isly auto krna pada */ 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: var(--primary-color)
+        
+
+      }
+      .box {
+        
+        background-color: var(--danger-color);
+        height: 200px;
+        width: 200px;
+        margin: 2px 9px;
+        /* border: 2px solid red; */
+        box-shadow: 5px 5px 3px var(--box-color);
+        border-radius: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1"></div>
+      <div class="box" id="box-2"></div>
+      <div class="box" id="box-3"></div>
+    </div>
+  </body>
+</html>

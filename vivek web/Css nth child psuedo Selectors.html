@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute & nth child psuedo Selectors</title>
+    <style>
+      .container{
+            margin: auto;
+            width: 200px;
+            display: block;
+            border: 2px solid black;
+      }
+      input{
+            display: block;
+            text-align: center;
+      }
+      input[type='text']{
+            border: 2px solid red;
+      }
+      a[target]{
+            color: red;
+      }
+      a[target='_self']{
+            color: rgb(82, 33, 197);
+      }
+      input[type='email']{
+            border: 2px solid black;
+
+      }
+      /* li:nth-child(2){
+            color: blue;
+      }
+} */
+      li:nth-child(2){
+            color: blue;
+      }
+      li:nth-child(odd){
+            color: blue;
+      }
+      li:nth-child(2n+3){
+            color: rgb(255, 89, 0);
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+      <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+      <form action="" class="form-control">
+        <input type="text" placeholder="Enter your name" />
+        <input type="password" placeholder="Enter your password" />
+        <input type="email" placeholder="Enter your email" />
+        <input type="submit" value="submit" />
+      </form>
+      <ul>
+            <li class="item" id="item-1">itme 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">item 3</li>
+            <li class="item" id="item-4">item 4</li>
+            <li class="item" id="item-5">itme 5</li>
+            <li class="item" id="item-6">item 6</li>
+            <li class="item" id="item-7">item 7</li>
+            <li class="item" id="item-8">item 8</li>
+      </ul>
+    </div>
+  </body>
+</html>

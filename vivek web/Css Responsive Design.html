@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+      .container {
+        text-align: center;
+        font-size: 10px;
+        border: 2px solid red;
+
+        /* vw=% ke barabar hota  */
+        width: 100vw;
+
+        /* vh=% ke barabar hota h  */
+        height: 100vh;
+      }
+      #first {
+        /* increase the size of the font with respect to pixel 
+                  paragraph ke font ko resize krne ke liye use krte h*/
+
+        font-size: 3em;
+        padding: 2em;
+      }
+      #second {
+        /* html ke code ke font ko resize krne ke liye rem ka use hota h */
+        font-size: 3rem;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="first">This is first Heading</h1>
+      <h1 id="second">This is second Heading</h1>
+      <h1 id="third">This is third Heading</h1>
+      <h1 id="fourth">This is fourth Heading</h1>
+    </div>
+  </body>
+</html>

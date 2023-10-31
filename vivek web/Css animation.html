@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amimation & keyframe</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: red;
+      }
+      .box {
+        background-color: grey;
+        height: 150px;
+        width: 150px;
+        position: relative; /* move krne ke liye 
+         1 animation name dena pdta hai
+         2 animation duration
+         3 animation iteration count*/
+        animation-name: vivek1;
+        animation-duration:3s;
+        animation-iteration-count: 3; 
+        animation-fill-mode: forwards; /* animation chlne ke bad me last me runkne ke liye    */
+         /* animation-timing-function: ease;slow fast krne ke liye  */
+          /*animation-delay: 2s;  ruke ke start hone ke liye  */
+           /* animation-direction:reverse ;  */
+           /*direction dene ke liyye use hota h  */
+           /* short write animation likhne ke liye  */
+           animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;
+           animation:vivek1 3s ease 1s 12 backwards
+      }
+      @keyframes vivek1{
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 150px;
+            left: 0px;
+
+            }
+        75%{ 
+          top:150px;
+          left:150px;
+        }
+        100%{
+          top: 0px;
+          left: 150px;
+          
+
+        }
+      }
+      @keyframes vivek {
+        from {
+          width: 150px; /* from se to tk jane ke liye */
+        }
+        to {
+          width: 1000px;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">This is a box</div>
+    </div>
+  </body>
+</html>

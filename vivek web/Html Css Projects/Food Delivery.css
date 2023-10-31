@@ -1,0 +1,303 @@
+/* Sabse first Css reset krna pdega */
+*{
+      margin: 0;
+      padding: 0;
+
+      box-sizing: border-box;
+      
+}
+
+body{
+      font-family: 'Overpass';
+
+}
+html{
+      scroll-behavior: smooth;
+}
+
+/* Css Variables - optional hai */
+
+/* Logo or imgage  */
+
+#logo{
+      
+      margin: 2px;
+      padding: 3px;
+}
+#logo img{
+      height: 50px;
+      border-radius: 100px;
+      margin: 2px;
+      padding: 3px;
+}
+/* Navigation bar */
+
+#navbar{
+      display: flex;
+      position:sticky ;
+      align-items: center;
+      top:0px
+      
+}
+
+ #navbar ul{
+      display: flex;
+      
+      
+ }
+
+/* Navigation bar list styling */
+ 
+ #navbar::before{
+        content: " ";
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1; /* content ko dikhaner ke liiye  */
+        opacity: 0.4;
+ }
+ 
+ #navbar ul li{
+      list-style: none;
+      font-size: 1.3rem;
+           
+      }
+ 
+ #navbar ul li a{
+       display: block; /*  padding dene ke liye   */
+       padding: 3px 10px;
+       text-decoration: none;
+       border-radius: 10px;
+       color:rgb(240, 235, 235);
+       font-weight: bold;
+       font-size: 1.2rem;
+       font-family: 'overpass';
+       
+       
+    
+       
+ }
+ #navbar ul li a:hover {
+      color: rgb(0, 0, 0);
+      background-color: white;
+ }
+
+ /* Home section */
+
+ #home{
+      display: flex;
+      flex-direction: column;
+      padding: 0px 160px;
+      align-items: center;
+      justify-content: center;
+      height: 363px;
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ #home::before{
+      content: " ";
+            background-color: black;
+            position: absolute;
+            height: 65%;
+            width: 100%;
+            background: url("Delivery_Page_Header_2048x.webp") no-repeat center center/cover ;
+            z-index: -1;
+            /* content ko dikhaner ke liiye  */
+            opacity: 0.80;   
+            top: 0;
+            left: 0;
+            box-shadow: 8px 8px 20px;
+
+            
+ }
+ 
+ #home h1{
+      color: rgb(4, 4, 4);
+      text-align: center ;
+ }
+ 
+ #home p{
+      color: rgb(0, 0, 0);
+      text-align: center ;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      
+ }
+
+ .btn{
+       padding: 8px 12px;
+       border-radius: 10px ;
+       font-weight: bold;
+       font-size: 1.1rem;
+       margin: 18px;
+       border:2px solid rgb(4, 4, 4);
+       position: relative;
+       
+     
+ }
+
+ .btn:hover{
+      padding: 10px 12px;
+      border-radius: 10px ;
+      
+
+      box-shadow: 3px 4px 5px;
+      background-color:rgb(255, 128, 0); 
+      transition-duration: 0.1s;
+      cursor: pointer;
+ }
+ 
+
+ 
+ 
+      /* utility classes */
+      
+      .h-primary{
+            font-size: 2.5rem;
+            padding: 15px;
+            text-shadow: 2px 2px 7px;
+      }
+      
+      .h-secondary{
+            font-size: 1.6rem;
+            padding: 15px;
+            
+      }
+      
+      /* Services section */
+      .center{
+            text-align: center;
+           }
+      #services{
+        margin:0 ;   
+        display: flex;
+        padding-top: 18px;
+      
+        /* margin-top: ; */
+        
+}     
+      #services-container{
+       
+        padding-top: 50px;
+    
+      
+        /* margin-top: ; */
+        
+}     
+      #services .box{
+    
+            padding: 10px;
+            margin: 15px;
+            border-radius: 10px;
+            background-color: rgb(213, 211, 205);
+            box-shadow: 8px 8px 20px;
+            border: 2px solid red;
+            height: 100%;
+            width: 80%;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* text-align: center; */
+            
+        }     
+
+     #services .box img{
+     
+      border-radius: 100px;
+      height: 100px;
+      margin: auto;
+      display: block;
+      
+     }
+
+     /* Client Section */
+
+     #client-section{
+          /* height: 240px; */
+          position: static;
+     }
+     #client-section::before{
+           content: " ";
+           position: absolute;
+           background: url("Delivery_Page_Header_2048x.webp");
+           height: 100%;
+           width: 100%;
+           z-index: -1;
+           opacity: 0.4;
+           box-shadow: -8px -8px 20px;
+         
+
+
+     }
+     #clients{
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      
+     }
+     #clients img{
+       height: 70px;
+       border-radius: 100%;
+       margin: 0px;
+     }
+     
+     .client-item{
+      padding: 24px;
+      margin: 0px;
+
+     }
+
+     /* Contact Section */
+
+     #contact{
+      position: relative;
+     }
+
+     #contact::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.7;
+      background: url("contact.jpg") no-repeat center center/cover; 
+     }
+
+     /* Footer section */
+
+     footer{
+      background-color: black;
+      color: white;
+      padding: 6px 10px;
+     }
+
+
+     /* Contact box */
+
+     #contact-box{
+      display: flex;
+      justify-content: center;
+      /* text-align: center; */
+      padding-bottom: 20px;
+      
+     }
+
+     #contact-box input,
+     #contact-box textarea{
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 3px 3px 7px;
+
+     }
+     #contact-box form{
+      width: 40%;
+     }
+     
+     #contact-box label{
+      font-weight: bold;
+     }
+     
+     

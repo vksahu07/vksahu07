@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form and input tags</title>
+  </head>
+
+  <body>
+    <h2>This is HTML form :</h2>
+
+    <!-- form using for gate input from the user -->
+
+    <form action="backend.java">
+      <!-- div using for the divide the line -->
+      <label for="name">First Name</label>
+
+      <div>
+        <input type="text" name="My name" id="name" />
+      </div>
+
+      <label for="last">Last Name</label>
+
+      <div>
+        <input type="text" id="last" />
+      </div>
+      <br />
+      <label for="MyEmail">Email</label>
+      <div>
+        <input type="email" id="MyEmail" />
+      </div>
+
+      <label for="Mydate">Date</label>
+      <div>
+        <input type="date" id="Mydate" />
+      </div>
+      <br />
+      <label for="Mytime">Time</label>
+      <div>
+        <input type="time" id="Mytime" />
+      </div>
+      <br />
+      <label for="Mynumber">Number</label>
+      <div>
+        <input type="number" id="Mynumber" />
+      </div>
+      <br />
+      <div>
+        <label for="elg">Are you eligibal?</label>
+        <input type="checkbox" name="Myeligibity" id="elg" />
+      </div>
+      <br />
+      <div>
+        <label for="my text">Write about yourself</label>
+        <br />
+        <textarea id="my text" cols="30" rows="10"></textarea>
+      </div>
+      <br />
+      <div>
+        Geneder: Male <input type="radio" name="Gender" /> Female
+        <input type="radio" name="Gender" /> other
+        <input type="radio" name="Gender" />
+      </div>
+      <br />
+      <div>
+        <label for="car">Car: </label>
+        <select name="My car" id="car">
+          <option value="ind">indica</option>
+          <option value="ver" selected>verna</option>
+        </select>
+      </div>
+
+      <br />
+      <div>
+        <input type="Submit" value="Submit Now" />
+        <input type="reset" value="reset Now" />
+      </div>
+    </form>
+  </body>
+</html>
